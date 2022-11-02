@@ -1,6 +1,6 @@
-# 🎶 [FerraLink](https://github.com/Cd-corgi/Ferralink)
+# 🎶 [FerraLink](https://discord.gg/8n3yNqtPAE)
 
-A Music Bot Example Template Based On FerraLink Wrapper.
+A Music Bot Example Template Based On [FerraLink](https://www.npmjs.com/package/ferra-link) Lavalink Client.
 
 # 😇 Features
 - Good sound quality.
