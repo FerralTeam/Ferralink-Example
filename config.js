@@ -3,9 +3,9 @@ module.exports = {
     token: "Your bot token",
     nodes: [{
       name: "lavalink",
-       url: "localhost:2333",
-       auth: "youshallpass",
-       secure: false
+      url: "localhost:2333",
+      auth: "youshallpass",
+      secure: false
     }],
     spotify: {
         clientID: "Your spotify clientID",
