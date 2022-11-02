@@ -1,0 +1,26 @@
+{
+    "name": "ferra-link_example",
+    "version": "0.0.1",
+    "description": "A example bot of ferralink wrapper",
+    "main": "index.js",
+   "scripts": {
+     "start": "node index.js"
+   },
+   "engines": {
+     "node": "16.x"
+   },
+   "dependencies": {
+    "discord.js": "^14.3.0",
+    "ferra-link": "^0.2.0"
+    },
+    "repository": "vkamsingh/Ferralink-Example",
+    "keywords": [
+      "FerraLink"
+    ],
+    "author": "vkamsingh",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/vkamsingh/Ferralink-Example/issues"
+    },
+    "homepage": "https://github.com/vkamsingh/Ferralink-Example#readme"
+  }
