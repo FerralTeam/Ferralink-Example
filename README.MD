@@ -28,5 +28,4 @@ module.exports = {
 ```
 # 💬 Need help
 > [Documents](https://ferralink.gitbook.io/untitled/).
->
 > [Support server](https://discord.gg/8n3yNqtPAE).
