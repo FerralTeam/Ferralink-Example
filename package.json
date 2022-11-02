@@ -10,7 +10,7 @@
      "node": "16.x"
    },
    "dependencies": {
-    "discord.js": "^14.3.0",
+    "discord.js": "^14.6.0",
     "ferra-link": "^0.2.0"
     },
     "repository": "vkamsingh/Ferralink-Example",
