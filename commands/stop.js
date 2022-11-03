@@ -12,7 +12,7 @@ if (!player) return message.reply({content: "Nothing playing right now."});
 
 player.loop = "none";
 player.queue.clear();
-player.stop();
+player.skip();
 return message.reply({content: "⏹️ Player has been stopped."})
     }
 } 
