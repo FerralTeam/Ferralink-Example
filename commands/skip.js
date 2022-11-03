@@ -10,7 +10,7 @@ return message.reply({content: "You must be in same voice channel to use this co
 const player = client.manager.players.get(message.guild.id);
 if (!player) return message.reply({content: "Nothing playing right now."});
 
-player.stop();
+player.skip();
 return message.reply({content: "⏭️ Player has been skipped."})
     }
 } 
