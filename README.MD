@@ -4,7 +4,7 @@ A Music Bot Example Template Based On [FerraLink](https://www.npmjs.com/package/
 
 # 😇 Features
 - Good sound quality.
-- Support - spotify, soundcloud, youtube, applemusic, dezzer.
+- Support - spotify, soundcloud, youtube.
 - Easy to setup and use.
 - Made with latest discord.js version.
 
