@@ -39,7 +39,7 @@ const embed1 = new EmbedBuilder()
 .setColor("Red")
 .setDescription(`Added **${playlistInfo.name}** to queue.`)
 return message.channel.send({embeds: [embed1]});
-} else if (loadType === 'SEARCH_RESULT' || loadType === 'TRACK_LOADED') {;
+} else if (loadType === 'SEARCH_RESULT' || loadType === 'TRACK_LOADED') {
 player.queue.add(tracks[0]);                             
 if (!player.playing && !player.paused) await player.play();
 const embed2 = new EmbedBuilder()
