@@ -1,7 +1,7 @@
 const { EmbedBuilder } = require("discord.js");
 module.exports = {
-    name: "shuffle",
-    aliases: [],
+    name: "nowplay",
+    aliases: ["np"],
     run: async (client, message, args) => {
 if (!message.member.voice.channel) return message.reply({content: "You Must Join A Voice Channel Before Using That Command!"});
  
