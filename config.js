@@ -7,7 +7,7 @@ module.exports = {
       auth: "youshallpass",
       secure: false
     }],
-    Options: {
+    shoukakuOptions: {
      moveOnDisconnect: false, 
      resumable: false, 
      resumableTimeout: 60, 
