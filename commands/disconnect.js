@@ -11,6 +11,6 @@ const player = client.manager.players.get(message.guild.id);
 if (!player) return message.reply({content: "Player is already disconnected."});
 
 player.destroy();
-return message.reply({content: "📤 Left the voice channel"});
+return message.reply({content: "📤 Left the voice channel."});
     }
 } 
