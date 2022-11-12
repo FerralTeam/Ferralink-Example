@@ -25,7 +25,7 @@ for (const file of commandFiles) {
 };
 
 //ferralink
-client.manager = new FerraLink(client, config.nodes, {
+client.manager = new FerraLink(client, config.nodes, config.Options, {
  spotify: {
   clientID: config.spotify.clientID,
   clientSecret: config.spotify.clientSecret
