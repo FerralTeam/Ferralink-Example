@@ -15,7 +15,7 @@ const embed = new EmbedBuilder()
 .setTitle("Now Playing")
 .setColor("Random")
 .setDescription(`[${player.queue.current.info.title}](${player.queue.current.info.uri}) By **${player.queue.current.info.author}**.`)
-.setFooter({text: `Requested By ${player.queue.current.info.requester}`});
+.setFooter({text: `Requested By ${player.queue.current.info.requester.tag}`});
 return message.reply({embeds: [embed]})
     }
 } 
