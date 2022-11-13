@@ -1,5 +1,6 @@
 const { Client, GatewayIntentBits, Collection, EmbedBuilder } = require("discord.js");
 const { FerraLink } = require("ferra-link");
+const { Shoukaku, Connectors } = require("shoukaku");
 const config = require("./config.js");
 const fs = require("fs");
 
@@ -25,12 +26,10 @@ for (const file of commandFiles) {
 };
 
 //ferralink
-client.manager = new FerraLink(client, config.nodes, config.shoukakuOptions, {
- spotify: {
-  clientID: config.spotify.clientID,
-  clientSecret: config.spotify.clientSecret
- }
-});
+client.manager = new FerraLink({
+ clientID: config.spotify.clientID,
+ clientSecret: config.spotify.clientSecret
+}, new Shoukaku(new Connectors.DiscordJS(client), config.nodes, config.shoukakuOptions));
 
 const ferralink = client.manager;
 ferralink.shoukaku.on("ready", (name) => {
