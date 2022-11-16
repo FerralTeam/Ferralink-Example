@@ -13,14 +13,14 @@
     "discord.js": "^14.6.0",
     "ferra-link": "^0.3.4"
     },
-    "repository": "vkamsingh/Ferralink-Example",
+    "repository": "FerralTeam/Ferralink-Example",
     "keywords": [
       "FerraLink"
     ],
-    "author": "vkamsingh",
+    "author": "FerralTeam",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/vkamsingh/Ferralink-Example/issues"
+      "url": "https://github.com/FerralTeam/Ferralink-Example/issues"
     },
-    "homepage": "https://github.com/vkamsingh/Ferralink-Example#readme"
+    "homepage": "https://github.com/FerralTeam/Ferralink-Example#readme"
   }
