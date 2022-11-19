@@ -8,7 +8,7 @@ const embed = new EmbedBuilder()
 .setColor('Random')
 .addFields({
 name: 'Music',
-value: '\`play\`, \`stop\`, \`skip\`, \`volume\`, \`resume\`, \`pause\`'
+value: '\`play\`, \`stop\`, \`skip\`, \`volume\`, \`resume\`, \`pause\`, \`disconnect\`, \`nowplaying\`, \`shuffle\`'
 });
 return message.channel.send({embeds: [embed]});
     }
