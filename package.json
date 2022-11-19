@@ -11,7 +11,7 @@
    },
    "dependencies": {
     "discord.js": "^14.6.0",
-    "ferra-link": "^0.3.4"
+    "ferra-link": "^0.3.5"
     },
     "repository": "FerralTeam/Ferralink-Example",
     "keywords": [
