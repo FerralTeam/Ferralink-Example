@@ -28,8 +28,8 @@ for (const file of commandFiles) {
 //ferralink
 client.manager = new FerraLink({
  BotClient: client,
- clientID: config.spotify.clientID,
- clientSecret: config.spotify.clientSecret
+ ClientID: config.spotify.clientID,
+ ClientSecret: config.spotify.clientSecret
 }, new Connectors.DiscordJS(client), config.nodes, config.shoukakuOptions);
 
 const ferralink = client.manager;
