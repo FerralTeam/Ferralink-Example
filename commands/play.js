@@ -25,7 +25,7 @@ volume: 100,
 deaf: true,
 });
 
-const resolve = await player.search(args.join(" "), { engine: "spsearch" });
+const resolve = await player.search(args.join(" "));
 const { loadType, tracks, playlistInfo } = resolve;
 
 if (loadType === "NO_MATCHES" || !tracks.length) return message.reply({content: "No match songs result found!"});
