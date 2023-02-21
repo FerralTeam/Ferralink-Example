@@ -49,7 +49,7 @@ const channel = client.channels.cache.get(player.textId);
 const embed = new EmbedBuilder()
 .setTitle("🎶 Now Playing")
 .setColor("Random")
-.setDescription(`[${track.info.title}](${track.info.uri})`);
+.setDescription(`[${track.info.title}](${track.info.uri}) [${track.info.requester}]`);
 channel.send({embeds: [embed]});
 });
 ferralink.on("queueEnd", (player) => {
