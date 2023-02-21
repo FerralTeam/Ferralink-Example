@@ -27,10 +27,18 @@ for (const file of commandFiles) {
 
 //ferralink
 client.manager = new FerraLink({
- BotClient: client,
- ClientID: config.spotify.clientID,
- ClientSecret: config.spotify.clientSecret
-}, new Connectors.DiscordJS(client), config.nodes, config.shoukakuOptions);
+    nodes: config.nodes,
+    shoukakuoptions: config.shoukakuOptions,
+    spotify: {
+        ClientID: config.spotify.clientID,
+        ClientSecret: config.spotify.clientSecret
+    },
+    defaultSearchEngine: "FerralinkSpotify",
+    send: (guildId, payload) => {
+        const guild = client.guilds.cache.get(guildId);
+        if (guild) guild.shard.send(payload);
+    }
+}, new Connectors.DiscordJS(client));
 
 const ferralink = client.manager;
 ferralink.shoukaku.on("ready", (name) => {
