@@ -32,8 +32,7 @@ if (loadType === "NO_MATCHES" || !tracks.length) return message.reply({content: 
 
 if (loadType === 'PLAYLIST_LOADED') {
 for (const track of tracks) {
-track.info.requester = message.author;
-player.queue.add(track);
+player.queue.add(track, { requester: message.author });
 }
 if (!player.playing && !player.paused) await player.play();
 const embed1 = new EmbedBuilder()
@@ -41,8 +40,7 @@ const embed1 = new EmbedBuilder()
 .setDescription(`Added **${playlistInfo.name}** to queue.`)
 return message.channel.send({embeds: [embed1]});
 } else if (loadType === 'SEARCH_RESULT' || loadType === 'TRACK_LOADED') {
-tracks[0].info.requester = message.author;
-player.queue.add(tracks[0]);                             
+player.queue.add(tracks[0], { requester: message.author });                          
 if (!player.playing && !player.paused) await player.play();
 const embed2 = new EmbedBuilder()
 .setColor("Random")
