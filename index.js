@@ -29,10 +29,10 @@ for (const file of commandFiles) {
 client.manager = new FerraLink({
     nodes: config.nodes,
     shoukakuoptions: config.shoukakuOptions,
-    spotify: {
+    spotify: [{
         ClientID: config.spotify.clientID,
         ClientSecret: config.spotify.clientSecret
-    },
+    }],
     defaultSearchEngine: "FerralinkSpotify",
     send: (guildId, payload) => {
         const guild = client.guilds.cache.get(guildId);
