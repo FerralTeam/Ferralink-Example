@@ -34,10 +34,6 @@ client.manager = new FerraLink({
         ClientSecret: config.spotify.clientSecret
     }],
     defaultSearchEngine: "FerralinkSpotify",
-    send: (guildId, payload) => {
-        const guild = client.guilds.cache.get(guildId);
-        if (guild) guild.shard.send(payload);
-    }
 }, new Connectors.DiscordJS(client));
 
 const ferralink = client.manager;
