@@ -10,8 +10,8 @@
      "node": "16.x"
    },
    "dependencies": {
-    "discord.js": "^14.6.0",
-    "ferra-link": "^0.4.5"
+    "discord.js": "^14.9.0",
+    "ferra-link": "^0.4.6"
     },
     "repository": "FerralTeam/Ferralink-Example",
     "keywords": [
